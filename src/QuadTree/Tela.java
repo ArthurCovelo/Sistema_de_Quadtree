@@ -113,7 +113,6 @@ public class Tela extends JPanel implements ActionListener {
 	public void run() {
 
 		long start = System.currentTimeMillis();
-		long totalTime = System.currentTimeMillis() - start;
 
 		switch (mode) {
 		case MDNORMAL:
@@ -137,6 +136,7 @@ public class Tela extends JPanel implements ActionListener {
 
 		repaint();
 
+		long totalTime = System.currentTimeMillis() - start;
 		milissegundos = totalTime;
 
 		main.setTitle("Obj[Quadtree] Particulas: " + part.size() + " - " + totalTime + " Milisegundos ");
